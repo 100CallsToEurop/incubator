@@ -22,6 +22,11 @@ export class VideosController {
     return this.videosService.createVideo(createVideoDto);
   }
 
+  @Get('test')
+  test() {
+    return 'test';
+  }
+
   @Get()
   findAll() {
     return this.videosService.findAllVideos();
