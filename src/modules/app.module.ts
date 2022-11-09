@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { VideosModule } from './modules/videos/videos.module';
-import { TestingModule } from './modules/testing/testing.module';
+import { VideosModule } from './videos/videos.module';
+import { TestingModule } from './testing/testing.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { TypeOrmConfigService } from './configs/typeorm.config';
+import { TypeOrmConfigService } from '../configs/typeorm.config';
 
 @Module({
   imports: [
